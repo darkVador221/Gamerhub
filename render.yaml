@@ -1,5 +1,9 @@
 services:
   - type: web
     name: gamerhub
-    env: static
-    staticPublishPath: .
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key:  mongodb+srv://<db_username>:<db_password>@cluster0.qdylypu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+        value: "mongodb+srv://<vador2899>:<ukSP9PH0BVBA3Yvh>@cluster.mongodb.net/gamerhub"
