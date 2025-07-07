@@ -1,5 +1,5 @@
 services:
   - type: web
     name: gamerhub
-    env: docker
-    plan: free
+    env: static
+    staticPublishPath: .
